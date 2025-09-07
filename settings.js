@@ -2,70 +2,70 @@ const fs = require('fs');
 const chalk = require('chalk');
 
 /*
-	* Create By Naze
-	* Follow https://github.com/nazedev
-	* Whatsapp : https://whatsapp.com/channel/0029VaWOkNm7DAWtkvkJBK43
+	* Create By Fahron
+	* Follow https://github.com/Fahron 
+	* Whatsapp : https://chat.whatsapp.com/DZWbVOdH8GrDeYmdT8PjJ6?mode=ems_copy_t
 */
 
 //~~~~~~~~~~~~< GLOBAL SETTINGS >~~~~~~~~~~~~\\
 
-global.owner = ['6282113821188'] //['628','628'] 2 owner atau lebih
-global.author = 'Nazedev'
-global.botname = 'Hitori Bot'
-global.packname = 'Bot WhatsApp'
+global.owner = ['6287864622064'] //['628','628'] 2 owner atau lebih
+global.author = 'Fahron'
+global.botname = 'Fahronhitori'
+global.packname = 'FahronBot'
 global.listprefix = ['+','!','.']
 
 /*
 - Setting Author, Packname, Botname sekarang pakai command
 - Walau sudah diganti tidak berubah
-- setbotauthor, setbotpackname, setbotname
+- Fahron, setbotpackname, setbotname
 */
 
 global.listv = ['•','●','■','✿','▲','➩','➢','➣','➤','✦','✧','△','❀','○','□','♤','♡','◇','♧','々','〆']
 global.tempatDB = 'database.json' // Taruh url mongodb di sini jika menggunakan mongodb. Format : 'mongodb+srv://...'
 global.tempatStore = 'baileys_store.json' // Taruh url mongodb di sini jika menggunakan mongodb. Format : 'mongodb+srv://...'
 global.pairing_code = true
-global.number_bot = '' // Kalo pake panel bisa masukin nomer di sini, jika belum ambil session. Format : '628xx'
+global.number_bot = ': '6287864622064'
 
 global.fake = {
 	anonim: 'https://telegra.ph/file/95670d63378f7f4210f03.png',
 	thumbnailUrl: 'https://telegra.ph/file/fe4843a1261fc414542c4.jpg',
-	thumbnail: fs.readFileSync('./src/media/naze.png'),
+	thumbnail: fs.readFileSync('./src/media/Fahron.png'),
 	docs: fs.readFileSync('./src/media/fake.pdf'),
 	listfakedocs: ['application/vnd.openxmlformats-officedocument.spreadsheetml.sheet','application/vnd.openxmlformats-officedocument.presentationml.presentation','application/vnd.openxmlformats-officedocument.wordprocessingml.document','application/pdf'],
 }
 
 global.my = {
-	yt: 'https://youtube.com/c/Nazedev',
-	gh: 'https://github.com/nazedev',
-	gc: 'https://chat.whatsapp.com/B5qJIwZHm4VEYZJQE6iMwy',
+	yt: 'https://youtube.com/c/Fahron',
+	gh: 'https://github.com/Fahron',
+	gc: 'https://chat.whatsapp.com/DZWbVOdH8GrDeYmdT8PjJ6?mode=ems_copy_t
 	ch: '120363250409960161@newsletter',
 }
 
 global.limit = {
-	free: 20,
+	free: 200,
 	premium: 999,
 	vip: 9999
 }
 
 global.money = {
 	free: 10000,
-	premium: 1000000,
-	vip: 10000000
+	premium: 100000000,
+	vip: 1000000000
 }
 
 global.mess = {
-	key: 'Apikey mu telah habis silahkan kunjungi\nhttps://my.hitori.pw',
+	key: 'Apikey mu telah habis silahkan kunjungi/https://my.hitori.pw',
 	owner: 'Fitur Khusus Owner!',
 	admin: 'Fitur Khusus Admin!',
 	botAdmin: 'Bot Bukan Admin!',
 	group: 'Gunakan Di Group!',
 	private: 'Gunakan Di Privat Chat!',
-	limit: 'Limit Anda Telah Habis!',
+	limit: 'Limit kamu sudah habis):!',
 	prem: 'Khusus User Premium!',
-	wait: 'Loading...',
-	error: 'Error!',
-	done: 'Done'
+	wait: 'Memproses...',
+	error: 'MOHON MAAF SISTEM ERORR',
+	done: 'Done Ngab✅'
 }
 
 global.APIs = {
@@ -90,3 +90,4 @@ fs.watchFile(file, () => {
 	delete require.cache[file]
 	require(file)
 });
+
