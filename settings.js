@@ -2,17 +2,17 @@ const fs = require('fs');
 const chalk = require('chalk');
 
 /*
-	* Create By Naze
-	* Follow https://github.com/nazedev
-	* Whatsapp : https://whatsapp.com/channel/0029VaWOkNm7DAWtkvkJBK43
+	* Create By Fahron
+	* Follow https://github.com/fahrondev
+ 
 */
 
 //~~~~~~~~~~~~< GLOBAL SETTINGS >~~~~~~~~~~~~\\
 
-global.owner = ['6282113821188'] //['628','628'] 2 owner atau lebih
-global.author = 'Nazedev'
-global.botname = 'Hitori Bot'
-global.packname = 'Bot WhatsApp'
+global.owner = ['6287864622064'] //['628','628'] 2 owner atau lebih
+global.author = 'Fahron'
+global.botname = 'FahronBot'
+global.packname = 'xyzRanz'
 global.listprefix = ['+','!','.']
 
 /*
@@ -25,25 +25,25 @@ global.listv = ['•','●','■','✿','▲','➩','➢','➣','➤','✦','✧
 global.tempatDB = 'database.json' // Taruh url mongodb di sini jika menggunakan mongodb. Format : 'mongodb+srv://...'
 global.tempatStore = 'baileys_store.json' // Taruh url mongodb di sini jika menggunakan mongodb. Format : 'mongodb+srv://...'
 global.pairing_code = true
-global.number_bot = '' // Kalo pake panel bisa masukin nomer di sini, jika belum ambil session. Format : '628xx'
+global.number_bot = '6287864622064'
 
 global.fake = {
 	anonim: 'https://telegra.ph/file/95670d63378f7f4210f03.png',
 	thumbnailUrl: 'https://telegra.ph/file/fe4843a1261fc414542c4.jpg',
-	thumbnail: fs.readFileSync('./src/media/naze.png'),
+	thumbnail: fs.readFileSync('./src/media/fahron.png'),
 	docs: fs.readFileSync('./src/media/fake.pdf'),
 	listfakedocs: ['application/vnd.openxmlformats-officedocument.spreadsheetml.sheet','application/vnd.openxmlformats-officedocument.presentationml.presentation','application/vnd.openxmlformats-officedocument.wordprocessingml.document','application/pdf'],
 }
 
 global.my = {
-	yt: 'https://youtube.com/c/Nazedev',
-	gh: 'https://github.com/nazedev',
-	gc: 'https://chat.whatsapp.com/B5qJIwZHm4VEYZJQE6iMwy',
+	yt: 'https://youtube.com/c/fahron',
+	gh: 'https://github.com/fahron',
+	gc: 'https://chat.whatsapp.com/DZWbVOdH8GrDeYmdT8PjJ6?mode=ems_copy_t',
 	ch: '120363250409960161@newsletter',
 }
 
 global.limit = {
-	free: 20,
+	free: 200,
 	premium: 999,
 	vip: 9999
 }
@@ -63,9 +63,9 @@ global.mess = {
 	private: 'Gunakan Di Privat Chat!',
 	limit: 'Limit Anda Telah Habis!',
 	prem: 'Khusus User Premium!',
-	wait: 'Loading...',
-	error: 'Error!',
-	done: 'Done'
+	wait: 'Memproses...',
+	error: 'Sistem Error!',
+	done: 'Done Ngab✅'
 }
 
 global.APIs = {
@@ -90,3 +90,4 @@ fs.watchFile(file, () => {
 	delete require.cache[file]
 	require(file)
 });
+
